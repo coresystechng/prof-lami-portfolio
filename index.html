@@ -43,7 +43,7 @@
     </div>
     
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light sticky-top">
             <div class="container-fluid container">
                 <a class="navbar-brand" href="#">
                     <img style="width: 100px;" src="img/main-logo.jpg" alt="">
@@ -78,19 +78,11 @@
     </header>
 
     <main>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="img/IMG_0237.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                <img src="img/IMG_8641.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                <img src="img/IMG_8641.JPG" class="d-block w-100" alt="...">
-                </div>
-            </div>
-        </div> 
+        <div class="carousel">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
         <br><br>
         <section>
             <div class="container">
@@ -98,15 +90,15 @@
                     <div class="col-md-12">
                         <h1 class="text-center blue-text display-4" data-aos="fade-up">Nigeria's First Professor of <br>Agrochemistry</h1>
                         <p class="paragraph text-black" data-aos="fade-up">A versatile Chemist, Nigeria’s first Professor of Agrochemistry, Lami Nnamonu has a First-Class BSc degree in Chemistry Education; MSc in Organic Chemistry and did her PhD research in Durham University, UK on the Commonwealth Split-site Doctoral Scholarship leading to a PhD in Agrochemical Technology of the Federal University of Agriculture Makurdi – the first in sub-Saharan Africa.</p>
-                        <a href="" class="justify-content-center d-flex py-3">
+                        <div class="text-center py-4">
                             <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-primary btn-lg rounded-0 mb-3">LEARN MORE ABOUT PROF LAMI</button>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="bg-black">
-            <div class="container py-5">
+            <div class="container pt-5">
                 <h1 class="text-center text-white display-4" data-aos="fade-up">Publications</h1>
                 <p class="paragraph text-light" data-aos="fade-up">Prof Nnamonu's literary skills and academic knowledge has flowed into several international journals. Some of her publications include:</p>
                 <br>
@@ -117,7 +109,7 @@
                             <div class="card-body">
                                 <p class="card-text">Phytochemical Analysis and Antimicrobial Activity of Seed Oils of Parkia Biglobosa and Syzygium Aromaticum on Escherichia Coli and Staphyloccocus Aureus</p>
                                 <hr>
-                                <a href="#" class="btn btn-primary">VIEW JOURNAL</a>
+                                <a href="#" class="btn btn-primary rounded-0">VIEW JOURNAL</a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +119,7 @@
                             <div class="card-body">
                                 <p class="card-text">Green Synthesis, Characterization and Aqueous Release of Paraquat Dichloride from Copper-Chitosan Nanoparticles</p>
                                 <hr>
-                                <a href="#" class="btn btn-primary">VIEW JOURNAL</a>
+                                <a href="#" class="btn btn-primary rounded-0">VIEW JOURNAL</a>
                             </div>
                         </div>
                     </div>
@@ -137,16 +129,134 @@
                             <div class="card-body">
                                 <p class="card-text">Isolation and Characterization of α –Amyrin from Stem Bark of Ficus exasperata (Vahl)</p>
                                 <hr>
-                                <a href="#" class="btn btn-primary">VIEW JOURNAL</a>
+                                <a href="#" class="btn btn-primary rounded-0">VIEW JOURNAL</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="" class="justify-content-center d-flex py-4">
+                <div class="text-center py-4">
                     <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-primary btn-lg rounded-0 mb-3">MORE PUBLICATIONS</button>
-                </a>
+                </div>
             </div>
         </section>
+        <section class="bg-blue">
+            <div class="container pt-5">
+                <h1 class="text-center text-white display-4" data-aos="fade-up">Latest Projects</h1>
+                <p class="paragraph text-light" data-aos="fade-up">True leadership grows out of an attitude of service to others. Prof Nnamonu has cultivated this leadership attitude and has been making a difference for many years.</p>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/WhatsApp Image 2024-09-21 at 1.14.01 PM.jpeg" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/ACS JOSTUM1.JPG" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/ACS JOSTUM Primary sch.jpeg" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/IMG-20240905-WA0016.jpg" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/WhatsApp Image 2024-09-24 at 3.18.48 PM.jpeg" class="card-img-top">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/WhatsApp Image 2024-09-24 at 3.18.10 PM.jpeg" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center py-4">
+                    <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-secondary btn-lg rounded-0 mb-3">SEE MORE PROJECTS</button>
+                </div>
+            </div>
+        </section>
+        <section class="container py-5">
+            <div class="row align-items-start">
+
+                <!-- Contact Info -->
+                <div class="col-md-6 mb-4" data-aos="fade-right">
+                    <h2 class="mb-4 fw-bold display-4">Get In Touch</h2>
+                    <div class="row">
+                        <div class="col-lg-12 mb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/wtywrnoz.json"
+                                            trigger="hover"
+                                            colors="primary:#1a237e"
+                                            style="width:50px;height:50px">
+                                        </lord-icon><br>
+                                        <strong style="font-size: 1.2em;">Phone:</strong>
+                                    </h5>
+                                    <p class="card-text"><a href="tel:+2348066321522" class="link text-decoration-none">+234 806 632 1522</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title"><strong></strong></h5>
+                                    <h5 class="card-title">
+                                        <lord-icon
+                                            src="https://cdn.lordicon.com/dhzbkemf.json"
+                                            trigger="hover"
+                                            stroke="bold"
+                                            colors="primary:#1a237e,secondary:#1a237e"
+                                            style="width:50px;height:50px">
+                                        </lord-icon><br>
+                                        <strong style="font-size: 1.2em;">Email:</strong>
+                                    </h5>
+                                    <p class="card-text">
+                                        <a href="mailto:lannamonu@uam.edu.ng" class="link text-decoration-none">lannamonu@uam.edu.ng</a>;<br>
+                                        <a href="mailto:lady_lami@yahoo.com" class="link text-decoration-none">lady_lami@yahoo.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-md-6" data-aos="fade-left">
+                <form action="#" method="POST" class="bg-light p-4 rounded shadow-sm">
+                    <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" class="form-control form-control-lg" placeholder="First Name" name="firstName" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control form-control-lg" placeholder="Last Name" name="lastName" required>
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                    <input type="email" class="form-control form-control-lg" placeholder="Email Address" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Subject" name="subject" required>
+                    </div>
+                    <div class="mb-4">
+                    <textarea class="form-control form-control-lg" placeholder="Your Message" name="message" rows="4" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg rounded-0">SUBMIT</button>
+                    </div>
+                </form>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>

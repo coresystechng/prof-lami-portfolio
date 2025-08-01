@@ -20,6 +20,19 @@
     text-align: justify;
 }
 
+.link {
+    color: #1A237E !important;
+}
+
+.link:hover {
+    color: #1A237E !important;
+    text-decoration: underline !important;
+}
+
+.bg-blue {
+    background-color: #1A237E !important;
+}
+
 /* BUTTON CSS */
 a {
     text-decoration: none !important;
@@ -34,6 +47,19 @@ a {
 
 .btn-primary:hover {
     background-color: #37409c !important;
+} 
+
+.btn-secondary {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #1A237E !important;
+    font-size: 1em !important;
+    padding: 15px 35px !important;
+}   
+
+.btn-secondary:hover {
+    background-color: #ddd !important;
+    border-color: #ddd !important;
 }   
 
 /* Back to Top Button */
@@ -91,4 +117,51 @@ a {
     to {
         stroke-dashoffset: 0;
     }
+}
+
+/* CAROUSEL CSS */
+.carousel {
+    position: relative;
+    height: 100vh;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    opacity: 0;
+    animation: fade 9s ease-in-out infinite;
+}
+
+/* Fallback gradient backgrounds to ensure visibility */
+.slide:nth-child(1) {
+    background: url(../img/IMG_0237.jpg);
+    animation-delay: 0s;
+}
+.slide:nth-child(2) {
+    background: url(../img/IMG_8641.JPG);
+    animation-delay: 3s;
+}
+.slide:nth-child(3) {
+    background: url(../img/IMG_8636.JPG);
+    animation-delay: 6s;
+}
+
+@keyframes fade {
+    0%, 35% { opacity: 0; }
+    5%, 30% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;    /* ensure it floats above other elements */
 }
