@@ -16,14 +16,31 @@
     <meta name="author" content="Trust Onyekwere & Collins Okoroafor">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Prof Lami Nnamonu | Portfolio</title>
-    <!-- style.css -->
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loading">
+                <lord-icon
+                    src="https://cdn.lordicon.com/wpequvda.json"
+                    trigger="loop"
+                    state="loop-transparency"
+                    colors="primary:#1a237e"
+                    style="width:100px;height:100px">
+                </lord-icon>
+            </div>
+        </div>
+    </div>
     
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
@@ -75,22 +92,71 @@
             </div>
         </div> 
         <br><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center blue-text display-4">Nigeria's First Professor of <br>Agrochemistry</h1>
-                    <p class="paragraph">A versatile Chemist, Nigeria’s first Professor of Agrochemistry, Lami Nnamonu has a First-Class BSc degree in Chemistry Education; MSc in Organic Chemistry and did her PhD research in Durham University, UK on the Commonwealth Split-site Doctoral Scholarship leading to a PhD in Agrochemical Technology of the Federal University of Agriculture Makurdi – the first in sub-Saharan Africa.</p>
-                    <a href="" class="justify-content-center d-flex">
-                        <button>LEARN MORE ABOUT PROF LAMI</button>
-                    </a>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center blue-text display-4" data-aos="fade-up">Nigeria's First Professor of <br>Agrochemistry</h1>
+                        <p class="paragraph text-black" data-aos="fade-up">A versatile Chemist, Nigeria’s first Professor of Agrochemistry, Lami Nnamonu has a First-Class BSc degree in Chemistry Education; MSc in Organic Chemistry and did her PhD research in Durham University, UK on the Commonwealth Split-site Doctoral Scholarship leading to a PhD in Agrochemical Technology of the Federal University of Agriculture Makurdi – the first in sub-Saharan Africa.</p>
+                        <a href="" class="justify-content-center d-flex py-3">
+                            <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-primary btn-lg rounded-0 mb-3">LEARN MORE ABOUT PROF LAMI</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="bg-black">
+            <div class="container py-5">
+                <h1 class="text-center text-white display-4" data-aos="fade-up">Publications</h1>
+                <p class="paragraph text-light" data-aos="fade-up">Prof Nnamonu's literary skills and academic knowledge has flowed into several international journals. Some of her publications include:</p>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/29660.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Phytochemical Analysis and Antimicrobial Activity of Seed Oils of Parkia Biglobosa and Syzygium Aromaticum on Escherichia Coli and Staphyloccocus Aureus</p>
+                                <hr>
+                                <a href="#" class="btn btn-primary">VIEW JOURNAL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/29660.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Green Synthesis, Characterization and Aqueous Release of Paraquat Dichloride from Copper-Chitosan Nanoparticles</p>
+                                <hr>
+                                <a href="#" class="btn btn-primary">VIEW JOURNAL</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="img/29660.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Isolation and Characterization of α –Amyrin from Stem Bark of Ficus exasperata (Vahl)</p>
+                                <hr>
+                                <a href="#" class="btn btn-primary">VIEW JOURNAL</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="justify-content-center d-flex py-4">
+                    <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-primary btn-lg rounded-0 mb-3">MORE PUBLICATIONS</button>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
 
     </footer>
+
+    <!-- Back to top button -->
+    <a type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="back-to-top">
+        <i class="bi bi-chevron-double-up pb-2"></i>
+    </a>
 
     <!-- jQuery minified CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -101,8 +167,44 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            offset: 100,       // trigger distance (px)
+            duration: 600,     // animation speed
+            easing: 'ease-in-out',
+            once: true,        // only animate once
+        });
     </script>
+    <!-- preloader JS -->
+    <script>
+        window.addEventListener('load', () => {
+        const pre = document.getElementById('preloader');
+        
+        // Ensure eyes animate slower if you change this later
+        document.documentElement.style.setProperty('--loader-speed', '12s');
+
+        // Keep preloader for extra 3 seconds
+        setTimeout(() => {
+            pre.classList.add('hidden');
+            pre.addEventListener('transitionend', () => pre.remove());
+        }, 2000);
+        });
+    </script>
+    <!-- Back to top -->
+    <script>
+        const backBtn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+            backBtn.classList.add('visible');
+            } else {
+            backBtn.classList.remove('visible');
+            }
+        });
+
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script> 
 
 </body>
 </html>
