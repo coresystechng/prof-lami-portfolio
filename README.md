@@ -4,4 +4,4 @@
 
 We're building the personal portfolio of Prof Lami Nnamonu, the first Professor of Agrochemistry in Nigeria.
 
-Built by [Sophia](https://github.com/Sophykay) & [Collins](https://github.com/collinsduzzy/)
+Built by [Tee](https://github.com/trustonyekwere) & [Collins](https://github.com/collinsduzzy/)
