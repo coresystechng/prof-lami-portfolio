@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
     <meta name="description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta data-react-helmet="true" name="description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta data-react-helmet="true" name="keywords" content="Professor Prof Lami Nnamonu Education Agrochemistry Agro Chemistry">
@@ -14,12 +15,66 @@
     <meta data-react-helmet="true" name="twitter:description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta name="author" content="Trust Onyekwere & Collins Okoroafor">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Prof Lami Nnamonu | Portfolio</title>
+    <title>Prof Lami Nnamonu | Contact</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loading">
+                <lord-icon
+                    src="https://cdn.lordicon.com/wpequvda.json"
+                    trigger="loop"
+                    state="loop-transparency"
+                    colors="primary:#1a237e"
+                    style="width:100px;height:100px">
+                </lord-icon>
+            </div>
+        </div>
+    </div>
     
     <header>
-
+        <nav class="navbar navbar-expand-lg bg-light sticky-top">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="#">
+                    <img style="width: 100px;" src="img/main-logo.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Nnamonu</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="publication.html">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -27,13 +82,100 @@
     </main>
 
     <footer>
-
+        <section class="bg-black">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-lg-9">
+                        <img data-aos="zoom-in" data-aos-delay="200"  style="width: 100px;" src="img/main-logo.jpg" alt=""><br><br>
+                        <p data-aos="fade-right" data-aos-delay="200"  class="text-white">One of Prof Nnamonu's credos:</p>
+                        <p data-aos="fade-right" data-aos-delay="200"  class="text-white">"No one ever becomes poor by giving and sharing."</p>
+                        <div class="start-0 py-4">
+                            <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-secondary btn-lg rounded-0 mb-3">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="index.html">Home</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="about.html">About Nnamonu</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="blog.html">Blog</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="publication.html">Publications</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="gallery.html">Gallery</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="contact.html">Contact</a></div>
+                    </div>
+                </div><hr class="text-white">
+                <div class="text-center py-4">
+                    <p class="text-white mb-0">© 2025 Prof Lami Nnamonu. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
     </footer>
 
+    <!-- Back to top button -->
+    <a type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="back-to-top">
+        <i class="bi bi-chevron-double-up pb-2"></i>
+    </a>
+
     <!-- jQuery minified CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper (for dropdowns/tooltips) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,       // trigger distance (px)
+            duration: 600,     // animation speed
+            easing: 'ease-in-out',
+            once: true,        // only animate once
+        });
+    </script>
+    <!-- preloader JS -->
+    <script>
+        window.addEventListener('load', () => {
+        const pre = document.getElementById('preloader');
+        
+        // Ensure eyes animate slower if you change this later
+        document.documentElement.style.setProperty('--loader-speed', '12s');
+
+        // Keep preloader for extra 3 seconds
+        setTimeout(() => {
+            pre.classList.add('hidden');
+            pre.addEventListener('transitionend', () => pre.remove());
+        }, 2000);
+        });
+    </script>
+    <!-- Back to top -->
+    <script>
+        const backBtn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+            backBtn.classList.add('visible');
+            } else {
+            backBtn.classList.remove('visible');
+            }
+        });
+
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script> 
+
+    <!-- nav anime -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const currentPath = window.location.pathname;
+
+            navLinks.forEach(link => {
+                const linkPath = new URL(link.href).pathname;
+                if (linkPath === currentPath || (linkPath.endsWith('/') && currentPath === '/')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

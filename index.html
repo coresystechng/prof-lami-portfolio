@@ -264,20 +264,20 @@
             <div class="container">
                 <div class="row pt-5">
                     <div class="col-lg-9">
-                        <img style="width: 100px;" src="img/main-logo.jpg" alt=""><br><br>
-                        <p class="text-white">One of Prof Nnamonu's credos:</p>
-                        <p class="text-white">"No one ever becomes poor by giving and sharing."</p>
+                        <img data-aos="zoom-in" data-aos-delay="200"  style="width: 100px;" src="img/main-logo.jpg" alt=""><br><br>
+                        <p data-aos="fade-right" data-aos-delay="200"  class="text-white">One of Prof Nnamonu's credos:</p>
+                        <p data-aos="fade-right" data-aos-delay="200"  class="text-white">"No one ever becomes poor by giving and sharing."</p>
                         <div class="start-0 py-4">
                             <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-secondary btn-lg rounded-0 mb-3">LEARN MORE</button>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="text-start"><a class="text-white" href="">Home</a></div>
-                        <div class="text-start"><a class="text-white" href="">About Nnamonu</a></div>
-                        <div class="text-start"><a class="text-white" href="">Blog</a></div>
-                        <div class="text-start"><a class="text-white" href="">Publications</a></div>
-                        <div class="text-start"><a class="text-white" href="">Gallery</a></div>
-                        <div class="text-start"><a class="text-white" href="">Contact</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="index.html">Home</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="about.html">About Nnamonu</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="blog.html">Blog</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="publication.html">Publications</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="gallery.html">Gallery</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="contact.html">Contact</a></div>
                     </div>
                 </div><hr class="text-white">
                 <div class="text-center py-4">
@@ -339,6 +339,21 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script> 
+
+    <!-- nav anime -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const currentPath = window.location.pathname;
+
+            navLinks.forEach(link => {
+                const linkPath = new URL(link.href).pathname;
+                if (linkPath === currentPath || (linkPath.endsWith('/') && currentPath === '/')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

@@ -1,306 +1,181 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="The personal portfolio website of Prof Lami Nnamonu">
-      <meta data-react-helmet="true" name="description" content="The personal portfolio website of Prof Lami Nnamonu">
-      <meta data-react-helmet="true" name="keywords" content="Professor Prof Lami Nnamonu Education Agrochemistry Agro Chemistry">
-      <meta data-react-helmet="true" property="og:title" content="Prof Lami Nnamonu">
-      <meta data-react-helmet="true" property="og:description" content="The personal portfolio website of Prof Lami Nnamonu">
-      <meta data-react-helmet="true" property="og:type" content="website">
-      <meta data-react-helmet="true" property="og:site_name" content="Prof Lami Nnamonu | Portfolio">
-      <meta data-react-helmet="true" name="twitter:title" content="Prof Lami Nnamonu | Portfolio">
-      <meta data-react-helmet="true" name="twitter:description" content="The personal portfolio website of Prof Lami Nnamonu">
-      <meta name="author" content="Sophia Kwaghzan & Collins Okoroafor">
-      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-      <title>Prof Lami Nnamonu | Portfolio</title>
-      <link rel="stylesheet" href="css/materialize.css">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
-      <style>
-          * {
-              font-family: "Faculty Glyphic", sans-serif;
-              font-weight: 400;
-              font-style: normal;
-          }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="The personal portfolio website of Prof Lami Nnamonu">
+    <meta data-react-helmet="true" name="description" content="The personal portfolio website of Prof Lami Nnamonu">
+    <meta data-react-helmet="true" name="keywords" content="Professor Prof Lami Nnamonu Education Agrochemistry Agro Chemistry">
+    <meta data-react-helmet="true" property="og:title" content="Prof Lami Nnamonu">
+    <meta data-react-helmet="true" property="og:description" content="The personal portfolio website of Prof Lami Nnamonu">
+    <meta data-react-helmet="true" property="og:type" content="website">
+    <meta data-react-helmet="true" property="og:site_name" content="Prof Lami Nnamonu | Portfolio">
+    <meta data-react-helmet="true" name="twitter:title" content="Prof Lami Nnamonu | Portfolio">
+    <meta data-react-helmet="true" name="twitter:description" content="The personal portfolio website of Prof Lami Nnamonu">
+    <meta name="author" content="Trust Onyekwere & Collins Okoroafor">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Prof Lami Nnamonu | Publications</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
 
-          p {
-              text-align: justify;
-          }
-
-          section#contact a:hover {
-              text-decoration: underline !important;
-          }
-
-          div.card-content p:first-child {
-            color: #1a237e !important;
-            font-weight: 800;
-          }
-      </style>
-    </head>
-    <body>
-      <header id="top scrollspy">
-        <!-- Navbar Below -->
-        <div class="navbar-fixed indigo darken-4" >
-          <nav class="indigo darken-4">
-              <div class="container nav-wrapper">
-                  <a href="/" class="brand-logo hide-on-med-and-down" style="max-width: 15%;">
-                      <img src="img/main-logo.jpg" alt="main logo" width="50%">
-                  </a>
-                  <a href="/" class="brand-logo hide-on-large-only center center-align">
-                      <img src="img/main-logo.jpg" alt="" class="hide-on-large-only" style="max-width: 30%;">
-                  </a>
-                  <a href="#" data-target="mobile" class="sidenav-trigger">
-                      <i class="material-icons">menu</i>
-                  </a>
-                  <ul class="right hide-on-med-and-down">
-                      <li><a href="/index.html">Home</a></li>
-                      <li><a href="/about.html">About Nnamonu</a></li>
-                      <li><a href="/blog.html">Blog</a></li>
-                      <li><a href="/publication.html">Publications</a></li>
-                      <li><a href="/gallery.html">Gallery</a></li>
-                      <li><a href="/contact.html">Contact</a></li>
-                  </ul>
-              </div>
-          </nav>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loading">
+                <lord-icon
+                    src="https://cdn.lordicon.com/wpequvda.json"
+                    trigger="loop"
+                    state="loop-transparency"
+                    colors="primary:#1a237e"
+                    style="width:100px;height:100px">
+                </lord-icon>
+            </div>
         </div>
-        <!-- Side Nav -->
-        <ul class="sidenav" id="mobile">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about.html">About Nnamonu</a></li>
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="/publication.html">Publications</a></li>
-          <li><a href="/gallery.html">Gallery</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-        </ul>
-        <!-- Main Slider -->
-        <div class="slider">
-            <ul class="slides">
-                <li>
-                    <img src="img/29660.jpg" class="responsive-img"> 
-                </li>
-            </ul>
-        </div>
-      </header>
-      <main>
-        <section class="container section"id="Publications">
-          <h2 class="indigo-text text-darken-4">Publications</h2> 
-
-          <!-- Row 1 (Pub 1 - 2) -->
-          <div class="row">
-            <div class="col s12 l6">
-                  <div class="card hoverable">
-                    <div class="card-content">
-                      <p>Phytochemical Analysis and Antimicrobial Activity of Seed Oils of Parkia Biglobosa and Syzygium Aromaticum on Escherichia Coli and Staphyloccocus Aureus</p>
-                      <br>
-                      <p>Nnamonu L., Solomon A. and Tor-Anyiin, T.A. (2021), Phytochemical Analysis and Antimicrobial Activity of Seed Oils of Parkia Biglobosa and Syzygium Aromaticum on Escherichia Coli and Staphyloccocus Aureus, International Journal of Food Nutrition and Safety, 2021, 12(1): 32-41</p>
-                      <br>
-                      <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication1">Link to Publication</a></p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Heavy metals contamination and physicochemical characteristics of soils from waste dumpsites in a military formation in Makurdi Benue State Nigeria</p>
-                  <br>
-                  <p>Raymond C. Nwankwo, Ishaq S. Eneji, Lami A. Nnamonu and Rufus Sha’Ato (2016), Heavy metals contamination and physicochemical characteristics of soils from waste dumpsites in a military formation in Makurdi Benue State Nigeria, Journal of Chemical Biological and Physical Sciences, Section D, 6(4), 1166-1179. E-ISSN 2249-1929.</p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.jcbsc.org">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Row 2 (Pub 3 - 4) -->
-          <div class="row">
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Characterization of Formulated Copper Chitosan Nanoparticles for the Controlled Release Studies of Dicamba Dimethylamine Herbicide</p>
-                  <br>
-                  <p>Wuana, R. A., Nnamonu, L. A., Sha’Ato, R. and Itodo, H. U (2019), Characterization of Formulated Copper Chitosan Nanoparticles for the Controlled Release Studies of Dicamba Dimethylamine Herbicide, ChemSearch Journal 10(2): 74 – 87.</p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication1">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                  <div class="card-content">
-                    <p>Determination of Organochlorine Pesticide Residues in Pumpkin, Spinach and Sorrel Leaves Grown in Akwanga, Nasarawa State, Nigeria</p>
-                    <br>
-                    <p>E. G. Ibrahim, N. Yakubu, L. A. Nnamonu, J. M. Yakubu (2018), Determination of Organochlorine Pesticide Residues in Pumpkin, Spinach and Sorrel Leaves Grown in Akwanga, Nasarawa State, Nigeria, Journal of Environmental Protection, 9, 508-515 ISSN Online: 2152-2219 ISSN Print: 2152-2197. </p>
-                    <br>
-                    <p><a  class="btn btn-flat blue darken-4 white-text" href="http://www.scirp.org/journal/jep">Link to Publication</a></p>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <!-- Row 3 (Pub 4 - 6) -->
-          <div class="row">
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Determination of Organochlorine Pesticide Residues in Pumpkin, Spinach and Sorrel Leaves Grown in Akwanga, Nasarawa State, Nigeria</p>
-                  <br>
-                  <p>E. G. Ibrahim, N. Yakubu, L. A. Nnamonu, J. M. Yakubu (2018), Determination of Organochlorine Pesticide Residues in Pumpkin, Spinach and Sorrel Leaves Grown in Akwanga, Nasarawa State, Nigeria, Journal of Environmental Protection, 9, 508-515 ISSN Online: 2152-2219 ISSN Print: 2152-2197.</p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="http://www.scirp.org/journal/jep">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Phytoextraction of Heavy Metals by Ricinus Communis in Soil Amended with Chelants and Poultry Manure, FUW Trends in Science & Technology Journal</p>
-                  <br>
-                  <p>Raymond A. Wuana, Lami A. Nnamonu, Adams U. Itodo and Gabriel T. Buluku (2019),  Phytoextraction of Heavy Metals by Ricinus Communis in Soil Amended with Chelants and Poultry Manure, FUW Trends in Science & Technology Journal, Vol. 4 No. 3 pp. 707 – 713. e-ISSN: 24085162; p-ISSN: 20485170. </p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.ftstjournal.com ">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Row 4 (Pub 7 - 8) -->
-          <div class="row">
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Assessment of Potential Ecological Risk of Heavy Metals in Soils from Waste Dumpsites in Military Formations in Makurdi, Nigeria. Journal of Environmental Protection</p>
-                  <br>
-                  <p>Raymond C. Nwankwo, Sylvester M. Tongu, Ishaq S. Eneji, Lami A. Nnamonu,  Raymond A. Wuana, Rufus Sha’Ato (2019), Assessment of Potential Ecological Risk of Heavy Metals in Soils from Waste Dumpsites in Military Formations in Makurdi, Nigeria. Journal of Environmental Protection, 10(4), 514-531
-                ISSN Online: 2152-2219 ISSN Print: 2152-2197  </p>
-                <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="http://www.scirp.org/journal/jep">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Heavy Metals in Soil and Vegetables Irrigated with Ex- Tin Mining Ponds Water in Barkin - Ladi Local Government Area Plateau State</p>
-                  <br>
-                  <p>Mafuyai G. M., Eneji I. S., Sha’Ato R. & Nnamonu L. A. (2019), Heavy Metals in Soil and Vegetables Irrigated with Ex- Tin Mining Ponds Water in Barkin - Ladi Local Government Area Plateau State, Nigeria, Agriculture and Food Sciences Research, 6 (2), 211-220. DOI: 10.20448/journal.512.2019.62.211.220</p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication1">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Row 5 (Pub 9 - 10) -->
-          <div class="row">
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                  <div class="card-content">
-                    <p>Green Synthesis of Copper Chitosan Nanoparticles for Controlled Release of Pendimethalin, Asian Journal of Chemical Sciences</p>
-                    <br>
-                    <p>H. U. Itodo, L. A. Nnamonu and R. A. Wuana (2017), Green Synthesis of Copper Chitosan Nanoparticles for Controlled Release of Pendimethalin, Asian Journal of Chemical Sciences, 2(3): 1-10.</p>
-                    <br>
-                    <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication1">Link to Publication</a></p>
-                  </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Calcination analysis, characterization and dyestuff adsorption potential of Nigerian limestones</p>
-                  <br>
-                  <p>A.U. Itodo, L. A. Nnamonu, V.O Ikape (2017), Calcination analysis, characterization and dyestuff adsorption potential of Nigerian limestones, American Journal of Chemistry and Applications, 4(1), 6-20.</p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication2">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Row 6 (Pub 11 - 12) -->
-          <div class="row">
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Isolation and Characterization  of β-Sitosterol from Ethyl Acetate Extract of Acalypha Wilkesiana Twigs</p>
-                  <br>
-                  <p>A.A. Fabunmi, T.A. Tor-Anyiin, L.A. Nnamonu, J.V. Anyam (2016), Isolation and Characterization  of β-Sitosterol from Ethyl Acetate Extract of Acalypha Wilkesiana Twigs, J. Chem. Soc. Nigeria, Vol. 41, No. 2, pp103 -107 </p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication1">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Isolation and Characterization of α –Amyrin acetate from Stem Bark of Ficus exasperata (Vahl)</p>
-                  <br>
-                  <p>L. A. Nnamonu, T. A. Tor-Anyiin, N. O. Ugbenyo and J. V. Anyam (2016), Isolation and Characterization of α –Amyrin acetate from Stem Bark of Ficus exasperata (Vahl), Biotechnology Journal International 16(4): 1-7, 201. </p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication2">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Row 7 (Pub 13 - 14) -->
-          <div class="row">
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>Green Synthesis, Characterization and Aqueous Release of Paraquat Dichloride from Copper-Chitosan Nanoparticles</p>
-                  <br>
-                  <p>L. A. Nnamonu, I. S. Eneji and B. U. Agu (2020), Green Synthesis, Characterization and Aqueous Release of Paraquat Dichloride from Copper-Chitosan Nanoparticles, Journal of Environmental Science, Toxicology and Food Technology, 14(10), 2319-2402. DOI: 10.9790/2402-1410023543</p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication2">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 l6">
-              <div class="card hoverable">
-                <div class="card-content">
-                  <p>facile formulation of starch–silver nanoparticle encapsulated dichlorvos and chlorpyrifos for enhanced insecticide delivery</p>
-                  <br>
-                  <p>N.E. Ihegwuagu, R. Sha’Ato, T.A. Tor-Anyiin, L.A. Nnamonu, P. Buekes, B. Sone and M. Maaza (2016), facile formulation of starch–silver nanoparticle encapsulated dichlorvos and chlorpyrifos for enhanced insecticide delivery, New J. Chem., 40, 1777</p>
-                  <br>
-                  <p><a  class="btn btn-flat blue darken-4 white-text" href="https://www.example.com/publication2">Link to Publication</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="page-footer indigo darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 l6">
-                    <img src="img/main-logo.jpg" alt="main-logo" class="responsive-img" width="25%">
-                    <p> One of Prof Nnamonu's credos:
-                    </p>
-                   <p>"Do not let your circumstances define who you are."</p> 
-                    <a href="/about.html" class="btn btn-flat indigo-text text-darken-4 white">Learn More</a>
-                </div>
-                <div class="col s12 l4 push-l2">
-                    <ul>
-                        <li><a class="white-text" href="#top">Back to Top</a></li>
-                        <li><a class="white-text" href="/about.html">About Nnamonu</a></li>
-                        <li><a class="white-text" href="/publication.html">Publications</a></li>
-                        <li><a class="white-text" href="/gallery.html">Gallery</a></li>
-                        <li><a class="white-text" href="/contact.html">Contact</a></li>
+    </div>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light sticky-top">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="#">
+                    <img style="width: 100px;" src="img/main-logo.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Nnamonu</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="publication.html">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-copyright black">
-            <div class="container center-align">© 2024 Professor Lami Nnamonu</div>
-        </div>
-      </footer>
-      <!-- jQuery minified CDN -->
-      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-      <!-- Compiled and minified JavaScript -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script>
-        $(document).ready(function(){
-            $('.sidenav').sidenav();
-            $('.slider').slider({height: 700, indicators: false});
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+        <section class="bg-black">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-lg-9">
+                        <img data-aos="zoom-in" data-aos-delay="200"  style="width: 100px;" src="img/main-logo.jpg" alt=""><br><br>
+                        <p data-aos="fade-right" data-aos-delay="200"  class="text-white">One of Prof Nnamonu's credos:</p>
+                        <p data-aos="fade-right" data-aos-delay="200"  class="text-white">"No one ever becomes poor by giving and sharing."</p>
+                        <div class="start-0 py-4">
+                            <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-secondary btn-lg rounded-0 mb-3">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="index.html">Home</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="about.html">About Nnamonu</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="blog.html">Blog</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="publication.html">Publications</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="gallery.html">Gallery</a></div>
+                        <div data-aos="fade-left" data-aos-delay="200"  class="text-start"><a class="text-white" href="contact.html">Contact</a></div>
+                    </div>
+                </div><hr class="text-white">
+                <div class="text-center py-4">
+                    <p class="text-white mb-0">© 2025 Prof Lami Nnamonu. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Back to top button -->
+    <a type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="back-to-top">
+        <i class="bi bi-chevron-double-up pb-2"></i>
+    </a>
+
+    <!-- jQuery minified CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper (for dropdowns/tooltips) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,       // trigger distance (px)
+            duration: 600,     // animation speed
+            easing: 'ease-in-out',
+            once: true,        // only animate once
         });
-      </script>
-    </body>
-  </html>
+    </script>
+    <!-- preloader JS -->
+    <script>
+        window.addEventListener('load', () => {
+        const pre = document.getElementById('preloader');
+        
+        // Ensure eyes animate slower if you change this later
+        document.documentElement.style.setProperty('--loader-speed', '12s');
+
+        // Keep preloader for extra 3 seconds
+        setTimeout(() => {
+            pre.classList.add('hidden');
+            pre.addEventListener('transitionend', () => pre.remove());
+        }, 2000);
+        });
+    </script>
+    <!-- Back to top -->
+    <script>
+        const backBtn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+            backBtn.classList.add('visible');
+            } else {
+            backBtn.classList.remove('visible');
+            }
+        });
+
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script> 
+
+    <!-- nav anime -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const currentPath = window.location.pathname;
+
+            navLinks.forEach(link => {
+                const linkPath = new URL(link.href).pathname;
+                if (linkPath === currentPath || (linkPath.endsWith('/') && currentPath === '/')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
