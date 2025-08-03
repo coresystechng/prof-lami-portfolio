@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
     <meta name="description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta data-react-helmet="true" name="description" content="The personal portfolio website of Prof Lami Nnamonu">
     <meta data-react-helmet="true" name="keywords" content="Professor Prof Lami Nnamonu Education Agrochemistry Agro Chemistry">
@@ -15,25 +16,200 @@
     <meta name="author" content="Trust Onyekwere & Collins Okoroafor">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Prof Lami Nnamonu | Portfolio</title>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loading">
+                <lord-icon
+                    src="https://cdn.lordicon.com/wpequvda.json"
+                    trigger="loop"
+                    state="loop-transparency"
+                    colors="primary:#1a237e"
+                    style="width:100px;height:100px">
+                </lord-icon>
+            </div>
+        </div>
+    </div>
     
     <header>
-
+        <nav class="navbar navbar-expand-lg bg-light sticky-top">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="#">
+                    <img style="width: 100px;" src="img/main-logo.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About Nnamonu</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="publication.html">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
-
+        <section>
+            <div class="hero_img">   
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row py-5 mx-3">
+                    <div class="col-md-12">
+                        <h1 class="text-start blue-text display-4 py-3" data-aos="fade-up">About Lami Nnamonu</h1>
+                        <p class="paragraph text-black py-3" data-aos="fade-up">Professor Lami Nnamonu is a distinguished Nigerian chemist with a focus on agrochemicals. She earned her PhD in Agrochemical Technology, the first in sub-Saharan Africa, and has become a professor of Agrochemistry at the Federal University of Agriculture Makurdi (now Joseph Sarwuan Tarka University Makurdi). Her research helps improve agricultural productivity in the face of climate challenges.</p>
+                        <p class="paragraph text-black py-4" data-aos="fade-up">Her research in the field of agrochemistry is helping to actualize the core mandate of her university against the backdrop of current challenges of climate disadvantages and other factors generally affecting agricultural productivity. She has served as Head of the University Pre-Degree Department and the Acting Director of the Centre for Agrochemical Technology at the Federal University of Agriculture.</p>
+                        <p class="paragraph text-black py-4" data-aos="fade-up">Professor Nnamonu is also a skilled project manager. She is currently the Center Ldeader & Director the World Bank-funded Centre for Innovation in Procurement Environmental and Social Standards (CIPESS). Her strong work in this area was recognized with two awards at the maiden in-class project control summit held in Galvaston, USA in 2024.</p>
+                        <p class="paragraph text-black py-4" data-aos="fade-up">Professor Nnamonu's dedication is further evidenced by her academic achievements. Her PhD thesis won the National Universities Commission (NUC)'s Nigerian Universities Doctoral Thesis Awards Scheme (NUDTAS)'s award for the best Ph.D thesis in physical sciences in 2011 and she received postdoctoral fellowships from the Schlumberger Foundation. She is a respected scholar and the first female Professor of Chemistry in Benue State.</p>
+                        <p class="paragraph text-black py-4" data-aos="fade-up">She’s married to Dr Emmanuel Nnamonu (MBBS) and they are blessed with five children.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <section class="bg-black">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-lg-9">
+                        <img style="width: 100px;" src="img/main-logo.jpg" alt=""><br><br>
+                        <p class="text-white">One of Prof Nnamonu's credos:</p>
+                        <p class="text-white">"No one ever becomes poor by giving and sharing."</p>
+                        <div class="start-0 py-4">
+                            <button type="button" data-aos="zoom-in" data-aos-delay="200" class="btn btn-secondary btn-lg rounded-0 mb-3">LEARN MORE</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="text-start"><a class="text-white" href="">Home</a></div>
+                        <div class="text-start"><a class="text-white" href="">About Nnamonu</a></div>
+                        <div class="text-start"><a class="text-white" href="">Blog</a></div>
+                        <div class="text-start"><a class="text-white" href="">Publications</a></div>
+                        <div class="text-start"><a class="text-white" href="">Gallery</a></div>
+                        <div class="text-start"><a class="text-white" href="">Contact</a></div>
+                    </div>
+                </div><hr class="text-white">
+                <div class="text-center py-4">
+                    <p class="text-white mb-0">© 2025 Prof Lami Nnamonu. All rights reserved.</p>
+                </div>
+            </div>
+        </section>
     </footer>
 
+    <!-- Back to top button -->
+    <a type="button" class="btn btn-danger btn-floating btn-lg back-to-top" id="back-to-top">
+        <i class="bi bi-chevron-double-up pb-2"></i>
+    </a>
+
     <!-- jQuery minified CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Popper (for dropdowns/tooltips) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,       // trigger distance (px)
+            duration: 600,     // animation speed
+            easing: 'ease-in-out',
+            once: true,        // only animate once
+        });
+    </script>
+    <!-- preloader JS -->
+    <script>
+        window.addEventListener('load', () => {
+        const pre = document.getElementById('preloader');
+        
+        // Ensure eyes animate slower if you change this later
+        document.documentElement.style.setProperty('--loader-speed', '12s');
+
+        // Keep preloader for extra 3 seconds
+        setTimeout(() => {
+            pre.classList.add('hidden');
+            pre.addEventListener('transitionend', () => pre.remove());
+        }, 2000);
+        });
+    </script>
+    <!-- Back to top -->
+    <script>
+        const backBtn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+            backBtn.classList.add('visible');
+            } else {
+            backBtn.classList.remove('visible');
+            }
+        });
+
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script> 
+
+        <!-- nav anime -->
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop - sectionHeight / 3) {
+            current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+            }
+        });
+        });
+
+        // Optional: Highlight immediately on click
+        navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+        });
+    </script>
 
 </body>
 </html>

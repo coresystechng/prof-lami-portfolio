@@ -29,6 +29,15 @@
     text-decoration: underline !important;
 }
 
+.text-white {
+    color: #fff !important;
+}
+
+.text-white:hover {
+    color: #ccc !important;
+    text-decoration: underline !important;
+}
+
 .bg-blue {
     background-color: #1A237E !important;
 }
@@ -135,21 +144,20 @@ a {
     background-repeat: no-repeat !important;
     background-position: center;
     opacity: 0;
-    animation: fade 9s ease-in-out infinite;
+    animation: fade 15s ease-in-out infinite;
 }
 
-/* Fallback gradient backgrounds to ensure visibility */
 .slide:nth-child(1) {
     background: url(../img/IMG_0237.jpg);
     animation-delay: 0s;
 }
 .slide:nth-child(2) {
     background: url(../img/IMG_8641.JPG);
-    animation-delay: 3s;
+    animation-delay: 5s;
 }
 .slide:nth-child(3) {
     background: url(../img/IMG_8636.JPG);
-    animation-delay: 6s;
+    animation-delay: 10s;
 }
 
 @keyframes fade {
@@ -158,10 +166,77 @@ a {
     100% { opacity: 0; }
 }
 
+/* navbar css */
+.nav-link {
+    color:  #222 !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #bbb !important;
+}
+
+/* navbar css */
+
+/* 1) Make the <a> shrink to its content */
+nav ul li a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 6px;      /* space for the underline */
+    transition: color 0.3s ease;
+    font-size: 18px !important;
+}
+
+/* 2) Centered underline, zero width by default */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2.6px;
+    background-color: #1A237E;
+    transition: width 0.3s ease;
+}
+
+/* 3) Expand only under the hovered/active link */
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 70%;
+}
+
 nav.navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1030;    /* ensure it floats above other elements */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.active {
+    color: #1A237E !important;
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2.6px;
+    background-color: #4280D0;
+    transition: width 0.3s ease;
+}
+
+/* HERO CSS */
+.hero_img {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/pexels-jessbaileydesign-965117.jpg');
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
 }
