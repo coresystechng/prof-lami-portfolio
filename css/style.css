@@ -5,6 +5,11 @@
     font-family: 'arpona';
 }
 
+html {
+    overflow-x: hidden !important;
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: arpona;
     src: url('../fonts/Arpona\ Regular.otf');
@@ -190,33 +195,73 @@ a {
     color: #1A237E !important;
 }
 
-/* 1) Make the <a> shrink to its content */
+/* BASE (Desktop) */
 nav ul li a {
     display: inline-block;
     position: relative;
-    text-decoration: none;
-    padding-bottom: 6px;      /* space for the underline */
-    transition: color 0.3s ease;
+    padding-bottom: 6px;
     font-size: 18px !important;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
 }
 
-/* 2) Centered underline, zero width by default */
 nav ul li a::after {
     content: '';
     position: absolute;
-    left: 50%;
     bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
-    width: 0;
     height: 2.7px;
+    width: 0;
     background-color: #1A237E;
     transition: width 0.3s ease;
 }
 
-/* 3) Expand only under the hovered/active link */
 nav ul li a:hover::after,
 nav ul li a.active::after {
-    width: 70%;
+    width: 70% !important;
+}
+
+
+/* MOBILE: <768px */
+@media (max-width: 767.98px) {
+    nav ul li a {
+        display: inline-block;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav ul li a::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav ul li a:hover::after,
+    nav ul li a.active::after {
+        width: 35% !important;
+    }
+}
+
+/* TABLET: 768px–1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav ul li a {
+        display: inline-block;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    nav ul li a::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    nav ul li a:hover::after,
+    nav ul li a.active::after {
+        width: 25% !important; /* slightly smaller pill for tablet */
+    }
 }
 
 nav.navbar {
@@ -252,6 +297,15 @@ nav.navbar {
     width: 100%;
     height: 100vh;
     background-image: url('../img/pexels-donghuangming.jpg');
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+}
+.mobile-bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/IMG_0229.jpg');
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat;
