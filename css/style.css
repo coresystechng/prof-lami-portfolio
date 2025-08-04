@@ -38,6 +38,15 @@
     text-decoration: underline !important;
 }
 
+.text-blue {
+    color: #1A237E !important;
+}
+
+.text-blue:hover {
+    color: #37409c !important;
+    text-decoration: underline !important;
+}
+
 .bg-blue {
     background-color: #1A237E !important;
 }
@@ -224,7 +233,7 @@ nav.navbar {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('../img/pexels-jessbaileydesign-965117.jpg');
+    background-image: url('../img/IMG_8630.JPG');
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat;
