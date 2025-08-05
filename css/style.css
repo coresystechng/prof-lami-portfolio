@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'arpona';
+    font-family: 'nata';
 }
 
 html {
@@ -11,8 +11,8 @@ html {
 }
 
 @font-face {
-    font-family: arpona;
-    src: url('../fonts/Arpona\ Regular.otf');
+    font-family: nata;
+    src: url('../fonts/NataSans-VariableFont_wght.ttf');
 }
 
 /* TEXT CSS */
