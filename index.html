@@ -312,9 +312,9 @@
         const pre = document.getElementById('preloader');
         
         // Ensure eyes animate slower if you change this later
-        document.documentElement.style.setProperty('--loader-speed', '12s');
+        document.documentElement.style.setProperty('--loader-speed', '10s');
 
-        // Keep preloader for extra 3 seconds
+        // Keep preloader for extra 1 second
         setTimeout(() => {
             pre.classList.add('hidden');
             pre.addEventListener('transitionend', () => pre.remove());
