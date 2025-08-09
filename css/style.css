@@ -255,8 +255,8 @@ nav.navbar {
 .hero_img5 {
     position: relative;
     width: 100%;
-    height: 70vh;
-    background-image: url('../img/contact_me.jpg');
+    height: 100vh;
+    background-image: url('../img/slider-1.JPG');
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat;
