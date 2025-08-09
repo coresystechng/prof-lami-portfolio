@@ -10,10 +10,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.fluid {
-    
-}
-
 @font-face {
     font-family: nata;
     src: url('../fonts/NataSans-VariableFont_wght.ttf');
@@ -22,11 +18,6 @@ html {
 /* TEXT CSS */
 .blue-text {
     color: #1A237E !important;
-}
-
-.paragraph {
-    font-size: 1.5em;
-    text-align: justify;
 }
 
 .link {
@@ -38,22 +29,16 @@ html {
     text-decoration: underline !important;
 }
 
+.link2:hover {
+    text-decoration: underline !important;
+}
+
 .text-white {
     color: #fff !important;
 }
 
-.text-white:hover {
-    color: #ccc !important;
-    text-decoration: underline !important;
-}
-
 .text-blue {
     color: #1A237E !important;
-}
-
-.text-blue:hover {
-    color: #37409c !important;
-    text-decoration: underline !important;
 }
 
 .bg-blue {
@@ -144,44 +129,6 @@ a {
     to {
         stroke-dashoffset: 0;
     }
-}
-
-/* CAROUSEL CSS */
-.carousel {
-    position: relative;
-    height: 100vh;
-}
-
-.slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center;
-    opacity: 0;
-    animation: fade 15s ease-in-out infinite;
-}
-
-.slide:nth-child(1) {
-    background: url(../img/IMG_0237.jpg);
-    animation-delay: 0s;
-}
-.slide:nth-child(2) {
-    background: url(../img/IMG_8641.JPG);
-    animation-delay: 5s;
-}
-.slide:nth-child(3) {
-    background: url(../img/IMG_8636.JPG);
-    animation-delay: 10s;
-}
-
-@keyframes fade {
-    0%, 35% { opacity: 0; }
-    5%, 30% { opacity: 1; }
-    100% { opacity: 0; }
 }
 
 /* NAVBAR CSS */
