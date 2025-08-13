@@ -1,7 +1,15 @@
-![Prof Lami Nnamonu | Portfolio](/img/main-logo.jpg "Prof Lami Nnamonu")
+<img src="/img/main-logo.jpg" width="25%" alt="main logo">
 
-# Prof Lami Nnamonu | Personal Portfolio
+We're revamping the personal portfolio of Prof Lami Nnamonu, **the first Professor of Agrochemistry in Nigeria.**
 
-We're building the personal portfolio of Prof Lami Nnamonu, the first Professor of Agrochemistry in Nigeria.
+### Built With
 
-Built by [Tee](https://github.com/trustonyekwere) & [Collins](https://github.com/collinsduzzy/)
+ - Bootstrap
+ - AOS
+ - Swiper JS
+
+### Contributors
+
+1. [Collins Okoroafor](https://github.com/collinsduzzy/)
+2. [Trust Onyekwere](https://github.com/trustonyekwere)
+3. [Jenny Rotimi](https://github.com/Jennysgitt)
