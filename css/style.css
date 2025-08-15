@@ -45,6 +45,10 @@ html {
     background-color: #1A237E !important;
 }
 
+.bg-purple{
+    background-color: #712171 !important;
+}
+
 /* BUTTON CSS */
 a {
     text-decoration: none !important;
